@@ -5,4 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# Only works in development,
+# run heroku pg:psql \copy listings FROM 'db/listings.csv' WITH CSV on production
 Listing.connection.execute("COPY listings FROM '#{Dir.pwd}/db/listings.csv' DELIMITER ',' CSV;")
