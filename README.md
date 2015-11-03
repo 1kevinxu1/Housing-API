@@ -36,7 +36,7 @@ Sample usage:
   * Implement a caching layer to retrieve data faster
   * Enable and configure CORS with rack-cors gem for more accessible API
 
-For growth:
+#### For growth:
 
   * Geocode each listing, to make them searchable relative to each other
     - Increases user retention/engagement for customers looking at single listings by suggesting nearby/related homes
